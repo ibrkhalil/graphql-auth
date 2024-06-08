@@ -1,0 +1,9 @@
+const { default: gql } = require("graphql-tag");
+
+export default gql`
+mutation ($email: String, $password: String) {
+  signup(email: $email, password: $password) {
+    id,
+    email
+  }
+}`
