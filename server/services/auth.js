@@ -66,6 +66,12 @@ function signup({ email, password, req }) {
     });
 }
 
+function logout(req) {
+  const {user} = req;
+  req.logout();
+  return user;  
+}
+
 // Logs in a user.  This will invoke the 'local-strategy' defined above in this
 // file. Notice the strange method signature here: the 'passport.authenticate'
 // function returns a function, as its indended to be used as a middleware with
@@ -81,4 +87,4 @@ function login({ email, password, req }) {
   });
 }
 
-module.exports = { signup, login };
+module.exports = { signup, login, logout };

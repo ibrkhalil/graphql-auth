@@ -8,3 +8,4 @@ Starter project from a GraphQL course on Udemy.com - Section 3!
 - Access the application at `localhost:4000` in your browser
 # graphql-auth
 # graphql-auth
+# graphql-auth
